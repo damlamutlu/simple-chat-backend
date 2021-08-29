@@ -1,6 +1,7 @@
 package com.doodle.project.models;
 
 import java.io.Serializable;
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -29,6 +30,9 @@ public class Message implements Serializable {
 	@Column(name = "MESSAGE")
 	private String message;
 	
+	@Column(name = "TIME")
+	private Date time;
+	
 	public Integer getId() {
 		return id;
 	}
@@ -47,6 +51,11 @@ public class Message implements Serializable {
 	public void setMessage(String message) {
 		this.message = message;
 	}
-	
+	public Date getTime() {
+		return time;
+	}
+	public void setTime(Date time) {
+		this.time = time;
+	}
 	
 }

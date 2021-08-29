@@ -1,6 +1,4 @@
 package com.doodle.project.services.impl;
-
-import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,11 +17,14 @@ public class MessageServiceImpl implements MessageService{
 	public List<Message> getAllMessage() {
 		
 		List<Message>  messageList =  messageRepository.findAll();	
-		for(Message message : messageList) {
-			System.out.println(message.getMessage());
-		}
-		
+		messageList.sort((o1,o2) -> o1.getTime().compareTo(o2.getTime()));	
 		return messageList;
+	}
+
+	@Override
+	public Message saveMessage(Message newMessage) {
+		Message message = messageRepository.save(newMessage);
+		return message;
 	}
 	
 	
