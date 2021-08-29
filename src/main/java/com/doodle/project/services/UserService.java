@@ -8,4 +8,6 @@ public interface UserService {
 
 	public User saveUser(User newUser);
 
+	public User findUserById(Integer id);
+
 }
