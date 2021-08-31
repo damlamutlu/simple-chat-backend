@@ -13,21 +13,19 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.doodle.project.models.Message;
 import com.doodle.project.services.MessageService;
-
+@CrossOrigin
 @RestController
 public class MessageController {
 	
 	@Autowired
 	MessageService messageService;
 	
-	@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping(path="/messages")
 	public @ResponseBody List<Message> getAllMessages(){
 		return messageService.getAllMessage();
 				
 	}
 	
-	@CrossOrigin(origins = "http://localhost:3000")
 	@PostMapping(path="/saveMessage")
 	public Message saveMessage(@RequestBody Message newMessage) {
 		return messageService.saveMessage(newMessage);

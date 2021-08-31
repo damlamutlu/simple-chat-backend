@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.doodle.project.models.User;
 import com.doodle.project.services.UserService;
 
+@CrossOrigin
 @RestController
 @RequestMapping("user")
 public class UserController {
@@ -19,20 +20,17 @@ public class UserController {
 	@Autowired
 	UserService userService;
 	
-	@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping(path="/username/{username}")
 	public User findUserByUsername(@PathVariable String username) {
 		User user = userService.findUserByUsername(username);
 		return user;
 	}
 	
-	@CrossOrigin(origins = "http://localhost:3000")
 	@PostMapping(path="saveUser")
 	public User saveUser(@RequestBody User newUser) {
 		return userService.saveUser(newUser);
 	}
 	
-	@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping(path="/id/{id}")
 	public User findUserById(@PathVariable Integer id) {
 		User user = userService.findUserById(id);
