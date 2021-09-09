@@ -1,4 +1,4 @@
-package com.doodle.project.controller;
+package com.chatapp.project.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.doodle.project.models.User;
-import com.doodle.project.services.UserService;
+import com.chatapp.project.models.User;
+import com.chatapp.project.services.UserService;
 
 @CrossOrigin
 @RestController

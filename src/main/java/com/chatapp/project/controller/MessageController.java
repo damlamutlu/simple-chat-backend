@@ -1,4 +1,4 @@
-package com.doodle.project.controller;
+package com.chatapp.project.controller;
 
 import java.util.List;
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.doodle.project.models.Message;
-import com.doodle.project.services.MessageService;
+import com.chatapp.project.models.Message;
+import com.chatapp.project.services.MessageService;
 @CrossOrigin
 @RestController
 public class MessageController {

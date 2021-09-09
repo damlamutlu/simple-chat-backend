@@ -1,4 +1,4 @@
-package com.doodle.project.models;
+package com.chatapp.project.models;
 
 import java.io.Serializable;
 import java.util.Date;

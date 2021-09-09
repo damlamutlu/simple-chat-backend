@@ -1,12 +1,12 @@
-package com.doodle.project.services.impl;
+package com.chatapp.project.services.impl;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.doodle.project.models.Message;
-import com.doodle.project.repositories.MessageRepository;
-import com.doodle.project.services.MessageService;
+import com.chatapp.project.models.Message;
+import com.chatapp.project.repositories.MessageRepository;
+import com.chatapp.project.services.MessageService;
 
 @Service
 public class MessageServiceImpl implements MessageService{

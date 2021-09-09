@@ -1,6 +1,6 @@
-package com.doodle.project.services;
+package com.chatapp.project.services;
 
-import com.doodle.project.models.User;
+import com.chatapp.project.models.User;
 
 public interface UserService {
 	

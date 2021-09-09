@@ -1,11 +1,11 @@
-package com.doodle.project.services.impl;
+package com.chatapp.project.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.doodle.project.models.User;
-import com.doodle.project.repositories.UserRepository;
-import com.doodle.project.services.UserService;
+import com.chatapp.project.models.User;
+import com.chatapp.project.repositories.UserRepository;
+import com.chatapp.project.services.UserService;
 
 @Service
 public class UserServiceImpl implements UserService{

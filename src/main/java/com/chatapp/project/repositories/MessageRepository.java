@@ -1,9 +1,9 @@
-package com.doodle.project.repositories;
+package com.chatapp.project.repositories;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.doodle.project.models.Message;
+import com.chatapp.project.models.Message;
 
 @Repository
 public interface MessageRepository extends JpaRepository<Message, Integer>{

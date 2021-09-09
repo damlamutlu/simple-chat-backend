@@ -1,8 +1,8 @@
-package com.doodle.project.services;
+package com.chatapp.project.services;
 
 import java.util.List;
 
-import com.doodle.project.models.Message;
+import com.chatapp.project.models.Message;
 
 public interface MessageService {
 	

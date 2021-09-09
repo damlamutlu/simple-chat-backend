@@ -1,13 +1,13 @@
-package com.doodle.project;
+package com.chatapp.project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DoodletaskApplication {
+public class ChatAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DoodletaskApplication.class, args);
+		SpringApplication.run(ChatAppApplication.class, args);
 	}
 
 }
